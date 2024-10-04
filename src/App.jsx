@@ -35,6 +35,7 @@ const App = () => {
 	const result = useQuery({
 		queryKey: ["notes"],
 		queryFn: getNotes,
+		refetchOnWindowFocus: false, // disabled refetching when focused on window
 	});
 
 	console.log(JSON.parse(JSON.stringify(result)));
