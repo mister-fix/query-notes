@@ -17,3 +17,17 @@ export const getNotes = () => {
 			return [];
 		});
 };
+
+// Method to create and save new notes to the backend
+export const createNote = (newNote) => {
+	return axios
+		.post(baseUrl, newNote) // URL of the API and new note object
+		.then((response) => {
+			// Return the data when request is successful
+			return response.data; // Extract the 'data' from the response object
+		})
+		.catch((err) => {
+			// Log any errors that occur during the request
+			console.error("error creating new note:", err.message);
+		});
+};
