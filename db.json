@@ -12,13 +12,13 @@
     },
     {
       "content": "state is stored in the backend",
-      "important": false,
+      "important": true,
       "id": "3"
     },
     {
       "id": "14da",
       "content": "a new note is born",
-      "important": true
+      "important": false
     }
   ]
 }
